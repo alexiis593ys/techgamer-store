@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGamer Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .banner {
+      background: url('https://images.unsplash.com/photo-1628277318770-c7cbd7a63e0e') no-repeat center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 15px #000;
+    }
+    .banner h2 {
+      font-size: 3em;
+      color: #00ffcc;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .producto {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,255,204,0.2);
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(0,255,204,0.5);
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .producto h3 {
+      margin: 15px 0 10px;
+      color: #00ffcc;
+    }
+    .btn {
+      background: #00ffcc;
+      color: #000;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #00cc99;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      margin-top: 30px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechGamer Store</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Todo para Gamers 🔥</h2>
+  </section>
+
+  <section id="productos" class="productos">
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1587202372775-98973d6fe1d1" alt="Mouse Gamer">
+      <h3>Mouse Gamer RGB</h3>
+      <p>$25.00</p>
+      <a class="btn" href="https://wa.me/593989652092">Comprar</a>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1616348436164-bd6f08c4509e" alt="Teclado Mecánico">
+      <h3>Teclado Mecánico</h3>
+      <p>$60.00</p>
+      <a class="btn" href="https://wa.me/593989652092">Comprar</a>
+    </div>
+    <div class="producto">
+      <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9" alt="Audífonos Gamer">
+      <h3>Audífonos Gamer</h3>
+      <p>$20.00</p>
+      <a class="btn" href="https://wa.me/593989652092">Comprar</a>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>📍 Quito, Ecuador | 📞 +593 989 652 092</p>
+    <p>© 2025 TechGamer Store - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
